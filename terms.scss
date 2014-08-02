@@ -1,0 +1,223 @@
+// Place all the styles related to the collections controller here.
+// They will automatically be included in application.css.
+
+@import "variables";
+@import "mixins";
+
+
+
+#terms-hover{
+  position: absolute;
+  min-height: 100px;
+  min-width: 200px;
+  background-color: whitesmoke;
+  border: solid 1px lightgrey;
+  display: none;
+  padding: 5px;
+
+  transition:All 150ms ease;
+  -webkit-transition:All 150ms ease;
+  -moz-transition:All 150ms ease;
+  -o-transition:All 150ms ease;
+  -webkit-box-shadow: 1px 1px 2px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    1px 1px 2px rgba(50, 50, 50, 0.5);
+  box-shadow:         1px 1px 2px rgba(50, 50, 50, 0.5);
+
+  z-index: 999999;
+
+
+  .terms-hover-type{
+
+    font-size:  $baseFontSize - 4;
+
+
+
+  }
+}
+
+.main-content.terms-index{  
+
+  padding: 0;
+  width: 100%;
+  margin-left: 0 !important;
+  position: relative;
+
+  .shadow{
+    -webkit-box-shadow: 1px 1px 2px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    1px 1px 2px rgba(50, 50, 50, 0.5);
+    box-shadow:         1px 1px 2px rgba(50, 50, 50, 0.5);
+
+  }
+
+
+
+  #terms-clear{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+
+  .search-box{
+
+    position: absolute;
+    left: -400px;
+    top: 0;
+
+
+    background-color: $grayGhost;
+    padding: 20 0 20 0;
+    border: solid 1px lightgrey;
+    width: 350px;
+
+    transition:All 1s ease;
+    -webkit-transition:All 1s ease;
+    -moz-transition:All 1s ease;
+    -o-transition:All 1s ease;
+
+    #search-box-results{
+
+      background-color: white;
+      min-height: 200px;
+      max-height: 350px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+
+      td{
+        padding: 2px;
+        padding-left: 10px;
+        cursor: pointer;
+      }
+
+    }
+
+    .search-box-action{
+      padding: 2px;
+      border-top: solid 1px grey;
+      
+
+      div{
+        display: inline-block;
+        width: 49%;
+
+      }
+      a{
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      div:nth-child(even){
+        text-align: right;
+      }
+    }
+
+
+    .search-box-header{
+
+      position: relative;
+
+      span{
+        line-height: $baseFontSize *1.7;
+        font-size: $baseFontSize *1.5;
+        padding-left: 10px;
+      }
+
+ 
+
+      input{
+        width: 150px !important;
+
+        position: absolute;
+        right: 0;
+      }
+
+
+
+    }
+
+
+
+
+  }
+
+  .terms-add{
+
+    position: absolute;
+    left: 0px;
+    top: 0;
+
+
+    //background-color: lightsalmon;
+    padding: 20 0 20 0;
+
+    transition:All 1s ease;
+    -webkit-transition:All 1s ease;
+    -moz-transition:All 1s ease;
+    -o-transition:All 1s ease;
+
+
+    .add-tab{
+
+      height: $baseFontSize *2;
+      width: $baseFontSize * 13;
+      margin-top: $baseFontSize;
+      cursor: pointer;
+
+
+
+
+    }
+
+    .add-text{
+      display: inline-block;
+      padding-left: $baseFontSize * 1.5;
+      font-size: $baseFontSize *1.5;
+      height: $baseFontSize *2;
+      line-height: $baseFontSize *2;
+      background-color: black;
+      color: whitesmoke;
+      width: $baseFontSize * 9 + 3;
+
+
+    }
+    .add-text:hover{
+      color:$linkColorHover;
+
+    }
+
+    .add-tab:after{
+        content: "";
+        float:right;
+        border:$baseFontSize solid black;
+        width: 5px;
+
+
+
+    }
+
+    .add-tab:after {
+        border-right-color:transparent;
+    }
+
+
+
+
+
+
+  }
+
+
+    //SVG
+    .eventNetworkNode{
+      fill: red;
+    }
+    .node{
+      cursor: pointer;
+    }
+    .network-link{
+      stroke: lightgrey;
+    }
+
+
+
+}
+
+
